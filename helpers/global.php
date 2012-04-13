@@ -1,7 +1,4 @@
 <?php
-/* Global view helpers */
-require_once 'config.inc.php';
-
 /* generate <img> tag */
 function img_tag($src,$options=array()){
     $options = array_merge(array('alt' =>''),$options);

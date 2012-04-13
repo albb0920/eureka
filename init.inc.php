@@ -2,7 +2,7 @@
 set_include_path(get_include_path().PATH_SEPARATOR.dirname(__FILE__));
 
 require_once 'config.inc.php';
-require_once 'helpers/helper.php';
+require_once 'helpers/global.php';
 require_once 'lib/utils.php';
 
 session_start();
