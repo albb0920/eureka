@@ -1,7 +1,7 @@
 <?php
-require 'init.inc.php';
-class IndexController{
+require_once 'init.inc.php';
+class IndexController extends Controller{
     function index(){
-	$this->render();
+		$this->render();
     }
 }
