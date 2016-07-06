@@ -6,7 +6,6 @@ require_once 'helpers/global.php';
 require_once 'lib/utils.php';
 
 session_start();
-DBRecord::connect();
 
 /* global helpers */
 function config($name){
@@ -38,6 +37,9 @@ function __autoload($class_name){
 	@include_once("lib/$class_name.class.php");
 }
 spl_autoload_register('__autoload');
+
+if($config['db'])
+	DBRecord::connect();
 
 /* autorun page controller */
 __autorun();
